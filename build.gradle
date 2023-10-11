@@ -27,7 +27,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'de.buw.fm4se.featuremodels.exec.LimbooleExecutor'
+    mainClass = 'de.buw.fm4se.satsolving.exec.LimbooleExecutor'
 }
 
 run {
