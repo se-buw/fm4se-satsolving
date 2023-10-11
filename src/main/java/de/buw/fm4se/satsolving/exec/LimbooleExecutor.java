@@ -16,7 +16,8 @@ public class LimbooleExecutor {
 
   // TODO change this according to your OS
   // windows
-  private static final String LIMBOOLE_EXE = "lib/limboole.exe";
+  private static String LIMBOOLE_EXE = "";
+  private static final String osName = System.getProperty("os.name").toLowerCase();
   // Linux x86 binary
   //private static final String LIMBOOLE_EXE = "lib/limboole-linux-x86.exe";
   // Linux amd64 binary
@@ -53,6 +54,13 @@ public class LimbooleExecutor {
    * @throws RuntimeException     in case Limboole produces any errors
    */
   public static String runLimboole(String formula, boolean checkSAT) throws IOException, InterruptedException {
+    if (osName.contains("win")) {
+      LIMBOOLE_EXE = "lib/limboole.exe";
+    }else if (osName.contains("linux")) {
+      LIMBOOLE_EXE = "lib/limboole-linux-x86.exe";
+    } else if (osName.contains("nix") || osName.contains("nux") || osName.contains("mac")) {
+        LIMBOOLE_EXE = "lib/limbooleOSX";
+    }
     Files.deleteIfExists(Paths.get(IN_FILE));
     Files.deleteIfExists(Paths.get(OUT_FILE));
     Files.deleteIfExists(Paths.get(ERROR_FILE));

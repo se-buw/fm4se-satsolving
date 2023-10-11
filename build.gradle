@@ -22,6 +22,7 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:30.1.1-jre'
+    implementation 'org.json:json:20210307'
 
 }
 
@@ -38,3 +39,12 @@ tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+// task createTestJar(type: Jar) {
+//     from sourceSets.test.output
+//     classifier = 'tests'
+// }
+
+// artifacts {
+//     archives createTestJar
+// }
+

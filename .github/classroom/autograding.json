@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Task 1: Checking Validity",
+      "setup": "chmod +x gradlew",
+      "run": "./gradlew test --tests 'T1CheckingValidityTest'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "Task 2: Semantic Equivalence",
+      "setup": "chmod +x gradlew",
+      "run": "./gradlew test --tests 'T2SemanticEquivalenceTest'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "Task 3: Conclusions",
+      "setup": "chmod +x gradlew",
+      "run": "./gradlew test --tests 'T3ConclusionsTest'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "Task 4: Role-based Access Control",
+      "setup": "chmod +x gradlew",
+      "run": "./gradlew test --tests 'T4RbacTest'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    } 
+  ]
+}
