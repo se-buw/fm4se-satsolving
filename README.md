@@ -1,3 +1,6 @@
+![Points bar](../../blob/badges/.github/badges/points-bar.svg)
+
+
 # Propositional Logic and SAT Solving
 
 TODO: add description

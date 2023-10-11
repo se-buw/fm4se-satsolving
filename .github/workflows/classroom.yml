@@ -11,6 +11,7 @@ jobs:
   build:
     name: FM4SE-Exercise-1
     runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
     steps:
       - name: Checkout Starter Code
         uses: actions/checkout@v4
