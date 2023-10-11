@@ -1,11 +1,11 @@
 name: GitHub Classroom Workflow
 
-on: [push]
+on: 
+  push:
+    branches:
+    - '*'
+    - '!badges'
 
-permissions:
-  checks: write
-  actions: read
-  contents: read
 
 jobs:
   build:
@@ -13,16 +13,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Starter Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Change permission
         run: chmod a+x lib/limboole-linux-*.exe
 
       - name: Execute tests
-        run: curl -s https://gist.githubusercontent.com/soaibsafi/83347d08e781aa8153703db0221db90e/raw/603e9b2175c9797f64080e849cd3eedc7bb99b6c/tests.sh | bash -s
+        run: curl -s https://gist.githubusercontent.com/soaibsafi/b3fba553635c0a8bb44809cbe18efc1c/raw/e8fe6c18ecf38a4748b4fc2cbde6df055ded981c/tests.sh | bash -s
     
       - name: Set up Java 17
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v3
         with:
           java-version: '17'
           distribution: 'adopt'
@@ -31,3 +33,24 @@ jobs:
       
       - name: Grading
         uses: education/autograding@v1
+        id: autograder
+        continue-on-error: true
+      
+      # switch to badges branch
+      - run: git checkout badges || git checkout -b badges
+      
+      # create points bar
+      - name: points bar
+        uses: markpatterson27/points-bar@v1
+        with:
+          points: ${{ steps.autograder.outputs.points }}
+          path: '.github/badges/points-bar.svg'
+
+      # commit and push badges if badges have changed
+      - name: Commit changes to points bar
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add '.github/badges/points-bar.svg'
+          git commit -m "Add/Update points bar" || exit 0
+          git push origin badges
