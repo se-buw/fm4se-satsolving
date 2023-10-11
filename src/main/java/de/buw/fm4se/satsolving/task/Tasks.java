@@ -24,10 +24,5 @@ public class Tasks {
   public static String task4_constraint_2 = "";
   
   public static String task4_validity = "";
-
-
-  
-
-
   
 }
