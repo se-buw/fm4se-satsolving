@@ -3,12 +3,6 @@
 
 # Propositional Logic and SAT Solving
 
-## Project Setup
-
-[📼 see the project setup video]()
-
-TODO: Create and describe github classroom setup
-
 ## Task 1
 Using at least three atoms and two different operators in each formula-
 
@@ -18,8 +12,8 @@ Using at least three atoms and two different operators in each formula-
 **b.** Provide a formula $\varphi$, where $\models \varphi$  does not hold.
 - https://play.formal-methods.net/?check=VAL&p=task-1b
 
-Submit the translation to limboole and the answer it produces.
-Submit the translations of the relevant checks in limboole syntax and the answers limboole produces in each case (4 checks).
+Submit the permalink of the translation to limboole.
+
 
 ## Task 2
 Provide two folmulas $\varphi$- 
@@ -33,7 +27,9 @@ Provide two folmulas $\varphi$-
 - Check2: https://play.formal-methods.net/?check=VAL&p=task-2b-c2
 
 
-Note: You may check each direction of the semantic entailment separately using limboole.
+You may check each direction of the semantic entailment separately using limboole.
+
+Submit the permalinks of the translations of the relevant checks (4 checks).
 
 ## Task 3
 Check whether the conclusion(4) is a valid conclusion. 
@@ -53,6 +49,8 @@ Check whether the conclusion(4) is a valid conclusion.
 
 **c.** Transform it to validity, and check validity using limboole. 
 - https://play.formal-methods.net/?check=SAT&p=task-3c
+
+Submit the permalinks for each subtask (6 permalinks)
 
 ## Task 4
 
@@ -82,17 +80,22 @@ Propositional atoms for resources: *accessCourse*, *accessAssignment*, *accessSe
 **c.** From *a* and *b*  above, formulate the validity check.
 - https://play.formal-methods.net/?check=SAT&p=task-4c
 
-
+Submit the permalinks for each subtask (6 permalinks)
 
 ## Submission
-[Submit all the permalinks in src/main/java/de/buw/fm4se/satsolving/task/Tasks.java](src/main/java/de/buw/fm4se/satsolving/task/Tasks.java)
+Submit all the permalinks in [src/main/java/de/buw/fm4se/satsolving/task/Tasks.java](src/main/java/de/buw/fm4se/satsolving/task/Tasks.java)
 
 
 ## Feedback
-TODO: Explain
+
 #### Via GitHub Actions
+- Once you push your changes to GitHub, the GitHub Action will run automatically and provide feedback on your submission.
+- You can see the results of the GitHub Action by clicking on the Actions tab as shown below.
+
 ![Action-Feedback](resource/action-feedback.gif)
 
 #### Via GitHub Pull Request
+- A pull request will be created automatically. If you have any problem/question about your submission you can ask it there. You can also mention us there to get our attention.
+
 ![Action-Feedback](resource/pull-feedback.gif)
 
