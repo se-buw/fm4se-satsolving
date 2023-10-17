@@ -12,24 +12,24 @@ Using at least three atoms and two different operators in each formula-
 **b.** Provide a formula $\varphi$, where $\models \varphi$  does not hold.
 - https://play.formal-methods.net/?check=VAL&p=task-1b
 
-Submit the permalink of the translation to limboole.
+Submit the permalink of each formula (see [Submission](#submission)).
 
 
 ## Task 2
-Provide two folmulas $\varphi$- 
+Provide two folmulas $\varphi$:
 
-**a.** where $\varphi$ is semantically equivalent to $p \rightarrow (q \vee r) $.
-- Check1: https://play.formal-methods.net/?check=VAL&p=task-2a-c1
-- Check2: https://play.formal-methods.net/?check=VAL&p=task-2a-c2
+**a.** where $\varphi$ is semantically equivalent to $p \rightarrow (q \vee r)$. Check each direction of the semantic entailment separately. 
+- Check $\varphi \models p \rightarrow (q \vee r)$ : https://play.formal-methods.net/?check=VAL&p=task-2a-c1
+- Check $p \rightarrow (q \vee r) \models \varphi$: https://play.formal-methods.net/?check=VAL&p=task-2a-c2
 
-**b.** where $\varphi$ is NOT semantically equivalent to $p \rightarrow (q \vee r) $.
+**b.** where $\varphi$ is NOT semantically equivalent to $p \rightarrow (q \vee r) $. Check each direction of the semantic entailment separately.
 - Check1: https://play.formal-methods.net/?check=VAL&p=task-2b-c1
 - Check2: https://play.formal-methods.net/?check=VAL&p=task-2b-c2
 
 
 You may check each direction of the semantic entailment separately using limboole.
 
-Submit the permalinks of the translations of the relevant checks (4 checks).
+Submit the permalinks of each the relevant checks (4 checks) (see [Submission](#submission)).
 
 ## Task 3
 Check whether the conclusion(4) is a valid conclusion. 
@@ -47,10 +47,9 @@ Check whether the conclusion(4) is a valid conclusion.
 **b.** Formulate the conclusion using semantic entailment.
 - https://play.formal-methods.net/?check=SAT&p=task-3b
 
-**c.** Transform it to validity, and check validity using limboole. 
-- https://play.formal-methods.net/?check=SAT&p=task-3c
 
-Submit the permalinks for each subtask (6 permalinks)
+
+Submit the permalinks for each subtask (5 permalinks) (see [Submission](#submission))
 
 ## Task 4
 
@@ -80,7 +79,7 @@ Propositional atoms for resources: *accessCourse*, *accessAssignment*, *accessSe
 **c.** From *a* and *b*  above, formulate the validity check.
 - https://play.formal-methods.net/?check=SAT&p=task-4c
 
-Submit the permalinks for each subtask (6 permalinks)
+Submit the permalinks for each subtask (6 permalinks) (see [Submission](#submission))
 
 ## Submission
 Submit all the permalinks in [src/main/java/de/buw/fm4se/satsolving/task/Tasks.java](src/main/java/de/buw/fm4se/satsolving/task/Tasks.java)
