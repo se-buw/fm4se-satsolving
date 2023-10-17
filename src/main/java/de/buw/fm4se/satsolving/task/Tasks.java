@@ -20,7 +20,6 @@ public class Tasks {
 
   public static String task3_b = "";
 
-  public static String task3_c = "";
    
   // Task 4
   public static String task4_a_r1 = "";

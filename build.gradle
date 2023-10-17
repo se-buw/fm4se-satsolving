@@ -39,12 +39,14 @@ tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
-// task createTestJar(type: Jar) {
-//     from sourceSets.test.output
-//     classifier = 'tests'
-// }
-
-// artifacts {
-//     archives createTestJar
-// }
-
+test {
+    testLogging {
+        events "failed"
+        showStandardStreams = true
+        exceptionFormat "full"
+        showCauses false
+        showExceptions true
+        showStackTraces false
+        showStandardStreams = false
+    }
+}
