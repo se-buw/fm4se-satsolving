@@ -1,5 +1,7 @@
 ![Points bar](../../blob/badges/.github/badges/points-bar.svg)
 
+#### 📝 [Report](../../blob/badges/report.md)
+---
 
 # Propositional Logic and SAT Solving
 
@@ -83,18 +85,4 @@ Submit the permalinks for each subtask (6 permalinks) (see [Submission](#submiss
 
 ## Submission
 Submit all the permalinks in [src/main/java/de/buw/fm4se/satsolving/task/Tasks.java](src/main/java/de/buw/fm4se/satsolving/task/Tasks.java)
-
-
-## Feedback
-
-#### Via GitHub Actions
-- Once you push your changes to GitHub, the GitHub Action will run automatically and provide feedback on your submission.
-- You can see the results of the GitHub Action by clicking on the Actions tab as shown below.
-
-![Action-Feedback](resource/action-feedback.gif)
-
-#### Via GitHub Pull Request
-- A pull request will be created automatically. If you have any problem/question about your submission you can ask it there. You can also mention us there to get our attention.
-
-![Action-Feedback](resource/pull-feedback.gif)
 
