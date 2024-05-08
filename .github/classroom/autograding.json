@@ -39,6 +39,16 @@
       "comparison": "included",
       "timeout": 5,
       "points": 1
-    } 
+    },
+    {
+      "name": "All tests",
+      "setup": "chmod +x gradlew",
+      "run": "./gradlew test",
+      "input": "",
+      "output": "",
+      "comparison": "excluded",
+      "timeout": 5,
+      "points": 0
+    }
   ]
 }
