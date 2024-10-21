@@ -9,10 +9,10 @@
 Using at least three atoms and two different operators in each formula-
 
 **a.** Provide a formula $\varphi$, where $\models \varphi$  holds.
-- https://play.formal-methods.net/?check=VAL&p=task-1a
+- https://play.formal-methods.net/?check=SAT&p=task-1a
 
 **b.** Provide a formula $\varphi$, where $\models \varphi$  does not hold.
-- https://play.formal-methods.net/?check=VAL&p=task-1b
+- https://play.formal-methods.net/?check=SAT&p=task-1b
 
 Submit the permalink of each formula (see [Submission](#submission)).
 
@@ -21,12 +21,12 @@ Submit the permalink of each formula (see [Submission](#submission)).
 Provide two folmulas $\varphi$:
 
 **a.** where $\varphi$ is semantically equivalent to $p \rightarrow (q \vee r)$. Check each direction of the semantic entailment separately. 
-- Check $\varphi \models p \rightarrow (q \vee r)$ : https://play.formal-methods.net/?check=VAL&p=task-2a-c1
-- Check $p \rightarrow (q \vee r) \models \varphi$: https://play.formal-methods.net/?check=VAL&p=task-2a-c2
+- Check $\varphi \models p \rightarrow (q \vee r)$ : https://play.formal-methods.net/?check=SAT&p=task-2a-c1
+- Check $p \rightarrow (q \vee r) \models \varphi$: https://play.formal-methods.net/?check=SAT&p=task-2a-c2
 
 **b.** where $\varphi$ is NOT semantically equivalent to $p \rightarrow (q \vee r) $. Check each direction of the semantic entailment separately.
-- Check1: https://play.formal-methods.net/?check=VAL&p=task-2b-c1
-- Check2: https://play.formal-methods.net/?check=VAL&p=task-2b-c2
+- Check1: https://play.formal-methods.net/?check=SAT&p=task-2b-c1
+- Check2: https://play.formal-methods.net/?check=SAT&p=task-2b-c2
 
 
 You may check each direction of the semantic entailment separately using limboole.
