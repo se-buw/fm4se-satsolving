@@ -84,5 +84,10 @@ Propositional atoms for resources: *accessCourse*, *accessAssignment*, *accessSe
 Submit the permalinks for each subtask (6 permalinks) (see [Submission](#submission))
 
 ## Submission
-Submit all the permalinks in [src/main/java/de/buw/fm4se/satsolving/task/Tasks.java](src/main/java/de/buw/fm4se/satsolving/task/Tasks.java)
+Submit all the permalinks in [src/main/java/de/buw/fm4se/satsolving/task/Tasks.java](src/main/java/de/buw/fm4se/satsolving/task/Tasks.java).
+
+> [!NOTE]  
+> If you are working on a local file instead of the playground, submit the file path instead of the permalink.
+
+
 
