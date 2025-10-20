@@ -1,4 +1,5 @@
 package de.buw.fm4se.satsolving.utils;
+
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.io.BufferedReader;
@@ -8,13 +9,17 @@ import java.util.regex.*;
 
 public class FmPlay {
     public static void main(String[] args) {
-        String plink = "https://play.formal-methods.net/?check=SAT&p=example-1";
+        String plink = "solutions/example.txt";
+        // String plink = "https://play.formal-methods.net/?check=SAT&p=example-1";
         System.out.println(getcode(plink));
     }
 
     public static String getcode(String plink) {
-      String[] parts = plink.split("\\?");
-      String apiurl = parts[0]+"api/permalink/?"+parts[1];
+        if (!plink.startsWith("https://")) {
+            return getCodeFromFile(plink);
+        }
+        String[] parts = plink.split("\\?");
+        String apiurl = parts[0] + "api/permalink/?" + parts[1];
         try {
             // Create URL object
             URL url = new URL(apiurl);
@@ -44,7 +49,20 @@ public class FmPlay {
         return "error";
     }
 
-    public static String removeComments(String formula){
+    public static String getCodeFromFile(String filepath) {
+        StringBuilder contentBuilder = new StringBuilder();
+        try (BufferedReader br = new BufferedReader(new java.io.FileReader(filepath))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                contentBuilder.append(line).append("\n");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return contentBuilder.toString();
+    }
+
+    public static String removeComments(String formula) {
         formula = formula.replaceAll("\"", "");
         String regexPattern = "(%.*|\\/\\/\\/.+|\\n)";
         Pattern pattern = Pattern.compile(regexPattern, Pattern.MULTILINE);
