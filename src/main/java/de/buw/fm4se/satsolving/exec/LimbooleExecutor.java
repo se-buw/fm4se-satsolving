@@ -57,7 +57,7 @@ public class LimbooleExecutor {
     if (osName.contains("win")) {
       LIMBOOLE_EXE = "lib/limboole.exe";
     }else if (osName.contains("linux")) {
-      LIMBOOLE_EXE = "lib/limboole-linux-x86.exe";
+      LIMBOOLE_EXE = "lib/limboole-linux-amd64.exe";
     } else if (osName.contains("nix") || osName.contains("nux") || osName.contains("mac")) {
         LIMBOOLE_EXE = "lib/limbooleOSX";
     }
